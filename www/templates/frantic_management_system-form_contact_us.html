@@ -1,0 +1,41 @@
+	<ion-view view-title=" Contact with Mad Agency" hide-nav-bar="false" >
+		<!-- content -->
+		<ion-content delegate-handle="top" lazy-scroll  id="page-form_contact_us" class="page-form_contact_us">
+		
+<div class="list card"  >
+	<form ng-submit="submitContact_us()">
+
+	<!-- input feedback_email -->
+	<label class="item item-input item-stacked-label">
+		<span class="input-label">Your Email</span>
+		<input type="email" ng-model="form_contact_us.feedback_email" name="feedback_email" placeholder="user@domain.com" ng-required="true"/>
+	</label>
+	<!-- ./input feedback_email -->
+
+	<!-- input feedback_name -->
+	<label class="item item-input item-stacked-label">
+		<span class="input-label">Your Name</span>
+		<input type="text" ng-model="form_contact_us.feedback_name" name="feedback_name" placeholder="Your Name Here" ng-required="true"/>
+	</label>
+	<!-- ./input feedback_name -->
+
+	<!-- input feedback_content -->
+	<label class="item item-input item-stacked-label">
+		<span class="input-label">Your Message</span>
+		<textarea ng-model="form_contact_us.feedback_message" name="feedback_message" placeholder="Your Message" ng-required="true">Write your comments here</textarea>
+	</label>
+	<!-- ./input feedback_content -->
+
+	<!-- input send -->
+	<div class="item item-button noborder">
+		<button class="button button-assertive ink">Submit</button>
+	</div>
+	<!-- ./input send -->
+	</form>
+</div>
+<br/><br/><br/><br/>
+ 
+    
+		</ion-content>
+		<!-- ./content -->
+	</ion-view>
